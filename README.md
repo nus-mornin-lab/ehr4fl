@@ -9,8 +9,7 @@ EHR benchmarks for federated learning
    - input: output csvs from 1)
    - Performs missing value imputation: Mean imputation for numeric columns and mode imputation for binary columns. Then performs standardization on all feature columns.
   
-   For split, raw data run 1).
-   
+   For split, raw data run 1).\
    For split, imputed and standardized data run 1) and then 2). 
 
 ##  In-hospital mortality
