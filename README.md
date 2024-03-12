@@ -2,12 +2,15 @@
 EHR benchmarks for federated learning
 
 ## preprocessing
-1. split.r:
+1. split.py:
    - input: df_eicu.csv
    - splits data into train, validation, and test (80/10/10) sets for each hospitalid (20 hospitalids included).
 2. preprocess.py
    - input: output csvs from 1)
-   - Performs missing value imputation: Mean imputation for numeric columns and mode imputation for binary columns. Then performs standardization on all feature columns.  
+   - Performs missing value imputation: Mean imputation for numeric columns and mode imputation for binary columns. Then performs standardization on all feature columns.
+  
+   For split, raw data run 1).
+   For split, imputed and standardized data run 1) and then 2). 
 
 ##  In-hospital mortality
 
